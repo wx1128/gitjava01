@@ -15,4 +15,7 @@ import java.util.List;
 public interface UserDao {
     //查询所有用户
     List<User> AllUser();
+
+//    登录验证
+    boolean loginUser(String userName,String passWord);
 }
