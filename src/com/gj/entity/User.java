@@ -16,19 +16,52 @@ public class User {
     private String loginName;
 //    登录密码
     private String passWord;
+//    性别
+    private int sex;
+//    电话
+    private String phone;
+//    地址
+    private String address;
 
-    public int getId() {
-        return id;
-    }
-
-    @Override
-    public String toString() {
+    @java.lang.Override
+    public java.lang.String toString() {
         return "User{" +
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", loginName='" + loginName + '\'' +
                 ", passWord='" + passWord + '\'' +
+                ", sex=" + sex +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
                 '}';
+    }
+
+    public int getSex() {
+        return sex;
+    }
+
+    public void setSex(int sex) {
+        this.sex = sex;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setId(int id) {
