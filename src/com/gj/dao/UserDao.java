@@ -15,4 +15,8 @@ import java.util.List;
 public interface UserDao {
     //查询所有用户
     List<User> AllUser();
+    //修改用户密码
+    boolean upUser(String userName,String passWord);
+
+
 }
