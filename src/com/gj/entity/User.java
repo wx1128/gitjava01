@@ -20,6 +20,16 @@ public class User {
     private String phone;
 //    邮箱
     private String email;
+//    性别
+    private int sex;
+
+    public int getSex() {
+        return sex;
+    }
+
+    public void setSex(int sex) {
+        this.sex = sex;
+    }
 
     public int getId() {
         return id;
