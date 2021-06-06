@@ -17,6 +17,6 @@ public interface UserDao {
     List<User> AllUser();
     //修改用户密码
     boolean upUser(String userName,String passWord);
-
-
+    //    登录验证
+    boolean loginUser(String userName,String passWord);
 }
