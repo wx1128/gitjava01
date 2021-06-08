@@ -10,54 +10,28 @@ package com.gj.entity;
  */
 public class User {
     private int id;
-//    用户名
-    private String userName;
-//    登录账号
     private String loginName;
-//    登录密码
-    private String passWord;
-//    性别
+    private String userName;
+    private String password;
     private int sex;
-//    电话
-    private String phone;
-//    地址
-    private String address;
+    private String identityCode;
+    private String email;
+    private String mobile;
+    private int type;
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
                 ", loginName='" + loginName + '\'' +
-                ", passWord='" + passWord + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
                 ", sex=" + sex +
-                ", phone='" + phone + '\'' +
-                ", address='" + address + '\'' +
+                ", identityCode='" + identityCode + '\'' +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", type=" + type +
                 '}';
-    }
-
-    public int getSex() {
-        return sex;
-    }
-
-    public void setSex(int sex) {
-        this.sex = sex;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public int getId() {
@@ -68,14 +42,6 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
     public String getLoginName() {
         return loginName;
     }
@@ -84,11 +50,59 @@ public class User {
         this.loginName = loginName;
     }
 
-    public String getPassWord() {
-        return passWord;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getSex() {
+        return sex;
+    }
+
+    public void setSex(int sex) {
+        this.sex = sex;
+    }
+
+    public String getIdentityCode() {
+        return identityCode;
+    }
+
+    public void setIdentityCode(String identityCode) {
+        this.identityCode = identityCode;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 }
